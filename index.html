@@ -141,7 +141,7 @@
           var erroc = false;
           try {
             var output = func(code, input);
-            if (output.lenght>2048){throw new err("Output has been truncated"+output)}
+            if (output.lenght>2048){throw ("Output has been truncated"+output)}
           } catch (err) {
             document.getElementById("log").value = err.message + "\n";
             erroc = true;
