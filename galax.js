@@ -6,8 +6,8 @@ function galax(program){
     var output='';var acum=0;
   for(var p=0;p<program.length;p++){
     if (program[p]==">"&& program[p+1]=="*"){acum++;acum=acum*2;p++;}
-    if (program[p]=="<"&& program[p+1]=="<"){acum-=2;p++;}
-    if (program[p]=="^"){output+=String.fromCharCode(acum);};
+    else if (program[p]=="<"&& program[p+1]=="<"){acum-=2;p++;}
+    else if (program[p]=="^"){output+=String.fromCharCode(acum);};
   };
 return output;
 };
