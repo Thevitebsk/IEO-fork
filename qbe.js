@@ -9,4 +9,5 @@ function qbe(program){
     else if (program[p]=="q"){q.shift();}
     else if (program[p]=="Q"){output+=q[0];q.shift();};
   };
+  return output;
 };
