@@ -5,8 +5,8 @@
 function qbe(program){
   var output='';var q=[]
   for(var p=0;p<program.length;p++){
-    if (program[p]=="p"){q.push(p++);};
-    elseif (program[p]=="q"){q.shift();};
-    elseif (program[p]=="Q"){output+=q[0];q.shift();};
+    if (program[p]=="p"){q.push(p++);}
+    else if (program[p]=="q"){q.shift();}
+    else if (program[p]=="Q"){output+=q[0];q.shift();};
   };
 };
