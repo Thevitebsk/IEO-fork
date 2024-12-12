@@ -7,7 +7,6 @@
   <body>
     <h3>Welcome to IEO-fork. It's basically a fork of Interpret Esolangs Online</h3>
     <script defer src="galax.js"></script>
-    <script defer src="error.js"></script>
     <script defer src="alphuck.js"></script>
     <script defer src="aplwsi.js"></script>
     <script defer src="arithmetic.js"></script>
@@ -141,7 +140,6 @@
           var erroc = false;
           try {
             var output = func(code, input);
-            if (output.lenght>2048){throw ("Output has been truncated"+output)}
           } catch (err) {
             document.getElementById("log").value = err.message + "\n";
             erroc = true;
