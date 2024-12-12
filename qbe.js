@@ -5,7 +5,7 @@
 function qbe(program){
   var output='';var q=[]
   for(var p=0;p<program.length;p++){
-    if (program[p]=="p"){q.push(p++);}
+    if (program[p]=="p"){q.push(p++);p++}
     else if (program[p]=="q"){q.shift();}
     else if (program[p]=="Q"){output+=q[0];q.shift();};
   };
