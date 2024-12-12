@@ -2,7 +2,7 @@
 //p - pushes a charecter to the queue
 //q - discards the bottom charecter from the queue
 //Q - same as "q" but prints the carecter
-function qbe(program){
+function qbe(program,input){
   var output='';var q=[]
   for(var p=0;p<program.length;p++){
     if (program[p]=="p"){q.push(p++);p++}
